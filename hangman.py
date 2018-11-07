@@ -45,3 +45,17 @@ def draw_hangman(num_wrong_guesses):
         output = output + "\n |"
     output = output + "____\n\n"
     print(output)
+    
+###########################################################
+#                       MAIN
+###########################################################
+
+name = input("What is your name? ")
+print("Hello, " + name + "! Time to play hangman!")
+
+guess = input("What is your guess? ")
+word = "test"
+if guess in word:
+    print("Correct!")
+else:
+    print("Wrong!")
